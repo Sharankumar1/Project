@@ -1,0 +1,18 @@
+<!-- <button (click)="tasks()">click</button> -->
+Search:<input type="text" placeholder="Search.." [(ngModel)]="search">
+<a [routerLink]="['/task1']">create a new task</a>
+<hr color="red">
+<table>
+    <tr>
+        <th>User-Id</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Completed</th>
+    </tr>
+    <tr *ngFor="let a of tasks1 | filter:search ">
+        <td>{{a.userId}}</td>
+        <td>{{a.id}}</td>
+        <td>{{a.title}}</td>
+        <td>{{a.completed}}</td>
+    </tr>
+</table>

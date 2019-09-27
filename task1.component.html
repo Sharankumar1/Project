@@ -1,0 +1,11 @@
+<form [formGroup]="t1">
+    <label>
+        <input type="text" formControlName="UserId" placeholder="enter your UserId"><br>
+        <!-- <input type="text" formControlName="Id" placeholder="enter your Id"><br> -->
+        <input type="text" formControlName="Title" placeholder="enter your Title"><br>
+        <input type="text" formControlName="Completed" placeholder="enter your Completed states"><br>
+        <div>
+            <button (click)="t2(t1.value)" class="btn btn-danger btn-block">submit</button>
+        </div>
+    </label>
+</form>

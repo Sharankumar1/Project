@@ -1,0 +1,14 @@
+<h1><b>LOGIN FORM</b></h1>
+<hr color="red">
+<form [formGroup]="valid">
+    <label>
+        Emailid:<br>
+        <input type="text" formControlName="Emailid" placeholder="enter your Emailid"><br>
+        Password:<br>
+        <input type="password" formControlName="pass" placeholder="enter your password"><br>
+        <div>
+            <button (click)="validate(valid.value)">submit</button>
+        </div>
+    </label>
+</form>
+

@@ -1,0 +1,14 @@
+<h1>Welcome to album page</h1>
+<hr color="red">
+<div *ngFor="let a of album1" (click)="a1(a)">
+    <h3><p>Title:
+        {{a.title}}
+    </p></h3>
+    <p>Album-ID:
+        {{a.albumId}}
+    </p>
+    <p>Id:
+        {{a.id}}
+    </p>
+    <hr>
+</div>

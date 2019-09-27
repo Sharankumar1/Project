@@ -1,0 +1,9 @@
+table,tr,td,th{
+    border: solid 1px black;
+}
+a{
+    margin-left: 400px;
+}
+table{
+    width: 100%;
+}

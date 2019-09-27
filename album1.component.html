@@ -1,0 +1,8 @@
+<h1>Photos</h1>
+<hr color="red">
+<div *ngFor="let v of albumdata" (click)="a11(v)">
+    <h3><p>Title:{{v.title}}</p></h3>
+    <p>AlbumId:{{v.albumId}}</p>
+    <img src="{{v.thumbnailUrl}}">
+    <hr>
+</div>
